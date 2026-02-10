@@ -1,4 +1,4 @@
-package com.matheus.agendadortarefas.infrastructure.client;
+package com.matheus.agendadortarefas.infrastructure.security.client;
 
 import com.matheus.agendadortarefas.business.dto.UsuarioDTO;
 import org.springframework.cloud.openfeign.FeignClient;
