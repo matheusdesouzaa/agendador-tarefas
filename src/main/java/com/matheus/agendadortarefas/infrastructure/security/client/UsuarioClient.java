@@ -1,4 +1,4 @@
-package com.matheus.agendadortarefas.infrastructure.client;
+package com.matheus.agendadortarefas.infrastructure.security.client;
 
 import com.matheus.agendadortarefas.business.dto.UsuarioDTO;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface UsuarioClient {
 
     @GetMapping("/usuario")
-    UsuarioDTO buscarUsuarioPorEmail(@RequestParam("email")String email,
-                                     @RequestHeader("Authorization")String token);
+    UsuarioDTO buscaUsuarioPorEmail(@RequestParam("email") String email,
+                                    @RequestHeader("Authorization") String token);
 }
